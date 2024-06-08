@@ -1,0 +1,319 @@
+/* Importa a fonte 'Montserrat' do Google Fonts para ser utilizada na página */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* Zera tudo pra garantir que não tem margem ou padding estranho */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Estilo geral do corpo da página */
+body {
+    /* Define um fundo com gradiente azul e branco */
+    background: linear-gradient(90deg, rgba(4, 96, 217, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    /* Aplica a fonte 'Montserrat' como fonte principal */
+    font-family: "Montserrat", sans-serif;
+    /* Adiciona um espaçamento interno de 20px */
+    padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    /* Organiza o cabeçalho em uma linha com os elementos alinhados ao centro e espaçados uniformemente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Adiciona uma margem inferior de 20px */
+    margin-bottom: 20px;
+}
+/*LOGO DO QUALIFIC*/
+.subtext:before {
+    content: '';
+    display: block;
+    width: 160px;
+    height: 2px;
+    background-color: #FFD700; /* Linha amarela */
+    margin: 5px 0;
+}
+.logo-container {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.main-text {
+    font-size: 20px;
+    font-weight: bold; /*É utilizado para aplicar ou remover negrito de um elemento de texto*/
+}
+
+.text-qualifica {
+    color: #fff;
+}
+
+.text-df {
+    color: #FFD700; /* Amarelo */
+}
+.subtext {
+    font-size: 15px;
+    margin-top: 4px; /* Ajusta a margem para aproximar o texto superior e inferior */
+}
+
+/*Define a cor de todos os H1 da página*/
+h1{
+    color: #fff;
+}
+/* Estilos do logo */
+#logo_title {
+    /* Organiza o logo e o título em uma linha */
+    display: flex;
+    align-items: center;
+}
+#logo {
+    height: 50px;
+    margin-right: 10px;
+} 
+/* Adiciona uma cor amarela ao texto dentro do elemento com o ID 'df'
+#df {
+    color: #f2cb02;
+} */
+
+/* Estilos do menu de navegação */
+nav {
+    /* Alinha o menu à direita */
+    margin-left: auto;
+}
+
+nav ul {
+    /* Remove as bolinhas de lista */
+    list-style: none;
+    /* Organiza os itens da lista em uma linha */
+    display: flex;
+    /* Adiciona espaçamento entre os itens da lista */
+    gap: 20px;
+}
+
+nav ul li {
+    /* Organiza os itens da lista em uma linha */
+    display: inline-block;
+}
+
+nav ul li a {
+    /* Aplica a fonte 'Montserrat' como fonte para os links */
+    font-family: "Montserrat", sans-serif;
+    /* Define o tamanho da fonte como 120% do tamanho padrão */
+    font-size: 120%;
+    /* Define a cor dos links como azul */
+    color: rgb(58, 28, 194);
+    /* Adiciona uma transição suave na mudança de cor */
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    /* Muda a cor dos links para amarelo quando hover */
+    color: #f2cb02;
+}
+
+#t_conosco {
+    background-color: #1d87ff;
+    /* Adiciona uma borda sólida de 3px */
+    border: 3px solid;
+    /* Adiciona um preenchimento interno de 10px */
+    padding: 10px;
+    /* Adiciona uma borda arredondada de 15px */
+    border-radius: 15px;
+}
+
+#t_conosco:hover {
+    /* Muda o fundo para azul e a cor do texto para branco quando hover */
+    background-color:#f2cb02;
+    color: #fff;
+    /* Muda a cor da borda para amarelo quando hover */
+    border-color: #f2cb02;
+}
+
+/* Estilos do carrossel */
+.carousel {
+    /* Define a posição como relativa para os elementos filhos */
+    position: relative;
+    /* Define a largura máxima como 1000px */
+    max-width: 1000px;
+    /* Centraliza horizontalmente */
+    margin: 50px auto;
+    /* Esconde o overflow horizontal */
+    overflow: hidden;
+    /* Adiciona uma borda arredondada de 10px */
+    border-radius: 10px;
+}
+
+.carousel-container {
+    /* Organiza os slides do carrossel em uma linha */
+    display: flex;
+    /* Adiciona uma transição suave na mudança de posição */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    /* Define a largura mínima como 100% */
+    min-width: 100%;
+    /* Adiciona uma caixa de borda ao redor dos slides */
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    /* Define a largura das imagens como 100% */
+    width: 100%;
+    /* Exibe as imagens como blocos */
+    display: block;
+}
+
+.carousel-button {
+    /* Define a posição como absoluta para se posicionar em relação ao carousel */
+    position: absolute;
+    /* Define a distância do topo como 50% */
+    top: 50%;
+    /* Translada a metade da altura do botão para cima */
+    transform: translateY(-50%);
+    /* Define a cor de fundo do botão como um fundo preto transparente */
+    background-color: rgba(18, 14, 138, 0.5);
+    /* Remove a borda */
+    border: none;
+    /* Define a cor do texto como branco */
+    color: white;
+    /* Define o tamanho da fonte como 2rem */
+    font-size: 2rem;
+    /* Adiciona um preenchimento interno de 10px */
+    padding: 10px;
+    /* Define o cursor como ponteiro para indicar que é clicável */
+    cursor: pointer;
+    /* Define a sobreposição como 10 para estar na frente dos slides */
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    /* Define a posição do botão de voltar como 10px da esquerda */
+    left: 10px;
+}
+
+.carousel-button.next {
+    /* Define a posição do botão de avançar como 10px da direita */
+    right: 10px;
+}
+
+.carousel-button:hover {
+    /* Altera a cor de fundo do botão ao passar o mouse */
+    background-color: rgba(89, 112, 4, 0.8);
+}
+
+/* Estilos do conteúdo principal */
+.content-main {
+    /* Organiza o conteúdo principal em duas colunas */
+    display: flex;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Adiciona uma margem de 50px no topo e na parte inferior */
+    margin: 50px 0;
+}
+
+aside {
+    /* Define o conteúdo da barra lateral como flexível */
+    flex: 1;
+    /* Adiciona um preenchimento à direita */
+    padding-right: 20px;
+}
+.p1{
+    color:#fff;
+    text-align:start
+}
+#linha{
+    color: #f2cb02;
+}
+article {
+    /* Define o conteúdo do artigo como flexível */
+    flex: 1
+}
+
+/* Define o estilo da imagem dentro do elemento 'article' */
+article img {
+    /* Define que a largura da imagem será de 100% do contêiner pai */
+    width: 100%;
+}
+
+/* Estilos do formulário */
+.form-section {
+    /* Organiza os elementos do formulário em linha e centraliza-os horizontalmente */
+    display: flex;
+    justify-content: center;
+    /* Adiciona uma margem superior de 20px para separar o formulário de outros elementos */
+    margin-top: 20px;
+}
+
+/* Estilos para o formulário */
+form {
+    /* Organiza os elementos do formulário em coluna */
+    display: flex;
+    flex-direction: column;
+    /* Define a largura do formulário como 70% do contêiner pai, com no máximo 500px */
+    width: 70%;
+    max-width: 500px;
+}
+
+/* Estilos para os campos de entrada do formulário */
+form input {
+    /* Adiciona uma margem superior de 20px para separar os campos de entrada */
+    margin-top: 20px;
+    /* Define a altura dos campos de entrada como 40px */
+    height: 40px;
+    /* Adiciona um preenchimento interno de 10px nos campos de entrada */
+    padding: 10px;
+    /* Adiciona uma borda arredondada de 5px aos campos de entrada */
+    border-radius: 5px;
+    /* Adiciona uma borda sólida de 1px com cor cinza aos campos de entrada */
+    border: 1px solid #ccc;
+    /* Define o tamanho da fonte como 16px para os campos de entrada */
+    font-size: 16px;
+}
+
+/* Estilos para o botão de envio do formulário */
+#enviar {
+    /* Define a cor do texto como branco */
+    color: #fff;
+    /* Define a cor de fundo como azul */
+    background-color: #f2cb02;
+    /* Remove a borda do botão */
+    border: none;
+    /* Adiciona um preenchimento interno de 10px ao botão */
+    padding: 10px;
+    /* Adiciona uma borda arredondada de 5px ao botão */
+    border-radius: 5px;
+    /* Define o cursor do mouse como ponteiro para indicar que o botão é clicável */
+    cursor: pointer;
+    /* Define o tamanho da fonte como 18px para o botão */
+    font-size: 18px;
+    /* Adiciona uma margem superior de 20px para separar o botão dos campos de entrada */
+    margin-top: 20px;
+}
+
+/* Estilos para o botão de envio do formulário quando o cursor do mouse está sobre ele */
+#enviar:hover {
+    /* Altera a cor de fundo para azul mais escuro */
+    background-color: #0056b3;
+}
+
+footer{
+    background-color: #0056b3;
+    color: #fff;
+    padding: 20pt;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+.footer a {
+    color: #f1f1f1;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #FFD700;
+}
+
+

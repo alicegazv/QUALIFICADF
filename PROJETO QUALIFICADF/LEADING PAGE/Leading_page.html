@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/Design sem nome (2).ico"/>
+    <title>QUALIFICADF</title>
+    
+</head>
+
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <div id="logo_title">
+            <!-- Logo do site com hiperlink que direciona a pagina do GDF -->
+            <a href="https://www.df.gov.br"><img src="img/logogdf.png"  alt="Logo GDF" id="logo"></a>
+
+            <div class="logo-container">
+                <div class="main-text">
+                    <span class="text-qualifica">QUALIFICA</span><span class="text-df">DF</span>
+                </div>
+                <div class="subtext">
+                    CURSOS DE QUALIFICAÇÃO PROFISSIONAL
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Leading_page.html">INICIO</a></li>
+                <li><a href="https://sedet.df.gov.br/wp-conteudo/uploads/2024/04/EDITAL-DE-CHAMAMENTO-PUBLICO-No-17_2024-–-SEDET_DF.pdf" target="_blank">CURSOS</a></li>
+                <li><a href="https://www.sedet.df.gov.br/inscricoes-abertas-para-o-programa-qualifica-df/"target="_blank">SOBRE</a></li>
+                <li><a href="https://eusoupraxis.com.br/qualificadf/"target="_blank">CONTATOS</a></li>
+                <li><a id="t_conosco" href="https://eusoupraxis.com.br/trabalheconosco/" target="_blank" style="color: aliceblue;">TRABALHE CONOSCO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Seção do carrossel de imagens -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <!-- Cada div é um slide do carrossel -->
+            <div class="carousel-slide">
+                <img src="img/1.png" alt="Imagem 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="img/2.png" alt="Imagem 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="img/3.png" alt="Imagem 3">
+            </div>
+        </div>
+        <!-- Botões para navegar no carrossel -->
+        <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+    </section>
+    <main>
+        <div class="content-main">
+            <!-- Seção de texto sobre o site -->
+            <div class="text-section">
+                <aside>
+                    
+                    <!--<h2 id="h2_chamado" style="color: #fff;">QUALIFICA <span class="df">DF</span></h2>
+                   <hr class="linha">
+                    <h1>Cursos de Qualificação Profissional</h1>-->
+                    <div class="logo-container">
+                        <div class="main-text">
+                            <span class="text-qualifica">QUALIFICA</span><span class="text-df">DF</span>
+                        </div>
+                        <div class="subtext">
+                            CURSOS DE QUALIFICAÇÃO PROFISSIONAL
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <p class="p1">Oferecemos diversos cursos de qualificação profissional com 240 horas de duração.
+                        Aproveite esta oportunidade e inscreva-se para obter mais informações e aprimorar suas
+                        habilidades.</p>
+                </aside>
+                <section class="form-section"></section>
+                <p class="p1">Entre em contato conosco preenchendo o formulário ao lado.</p>
+                <!-- Seção do formulário -->
+                <form>
+                    <!-- Campos do formulário -->
+                    <input type="text" placeholder="Nome" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="tel" placeholder="Telefone" required>
+                    <input id="enviar" type="submit" value="Enviar">
+                </form>
+                <!-- Texto ao lado do formulário -->
+
+                </section>
+            </div>
+
+            <!-- Seção com uma imagem ao lado do texto -->
+            <div class="image-section">
+                <article>
+                    <img src="img/4.png" alt="Estudantes">
+                </article>
+            </div>
+        </div>
+        </section>
+    </main> 
+
+    <footer> 
+    <div class="container-footer">
+        <p>Siga-nos no Instagram!</p>
+       <a style="color: aliceblue;" href="https://www.instagram.com/eusoupraxis/" >PRAXIS</a>|
+       <a style="color: aliceblue;" href="https://www.instagram.com/gov_df/"> GOV.BR</a>|
+       <a style="color: aliceblue;" href="https://www.instagram.com/alywcx_/"> ALUNA</a>
+    </div>
+    </footer>
+
+    <!-- Importa o script do carrossel -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
